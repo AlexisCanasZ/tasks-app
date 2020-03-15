@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion de Tarea</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Tasks App</a>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+        <div class="row pt-3">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="formTask">
+                            <div class="form-group">
+                                <input type="text" id="title" placeholder="Add a To Do" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="description" cols="30" rows="10" placeholder="Add a description"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">SAVE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div id="tasks">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
