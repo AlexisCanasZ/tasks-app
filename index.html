@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicacion de Tarea</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/fontawesome-5.12.1/css/all.min.css">
 </head>
-<body>
+<body class="bg-dark">
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">Tasks App</a>
@@ -26,7 +27,14 @@
                             <div class="form-group">
                                 <textarea class="form-control" id="description" cols="30" rows="10" placeholder="Add a description"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-success btn-block">SAVE</button>
+                            <div class="form-group">
+                                <select id="priority" class="form-control">
+                                    <option value="LOW">Low</option>
+                                    <option value="MID">Mid</option>
+                                    <option value="HIGH">High</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block"><i class="fas fa-file-download fa-fw"></i> SAVE</button>
                         </form>
                     </div>
                 </div>
@@ -38,7 +46,7 @@
             </div>
         </div>
     </div>
-    
+    <script src="libs/fontawesome-5.12.1/js/all.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
